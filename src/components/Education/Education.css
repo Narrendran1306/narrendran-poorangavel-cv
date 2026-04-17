@@ -1,0 +1,55 @@
+.education {
+    padding: 12px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.light .education {
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+}
+
+.dark .education {
+    background: #334155;
+    border: 1px solid #475569;
+}
+
+.education h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #10b981;
+}
+
+.education__card {
+    padding: 8px;
+    margin-bottom: 6px;
+}
+
+@media print {
+    .education {
+        padding: 6px !important;
+        background: white !important;
+    }
+
+    .education__card {
+        padding: 4px !important;
+        margin-bottom: 4px !important;
+        color: black !important;
+    }
+}
+
+/* Common section styling */
+section {
+    border: 1px solid #d1d5db;
+    padding: 14px;
+    border-radius: 6px;
+    background: white;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #1f2937;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 6px;
+}

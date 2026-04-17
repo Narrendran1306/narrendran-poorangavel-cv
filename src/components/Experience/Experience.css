@@ -1,0 +1,82 @@
+.experience {
+    padding: 12px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.light .experience {
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
+}
+
+.dark .experience {
+    background: #334155;
+    border: 1px solid #475569;
+}
+
+.experience h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #2563eb;
+    border-bottom: 2px solid #93c5fd;
+    padding-bottom: 4px;
+}
+
+.experience__card {
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.light .experience__card {
+    background: #f8fafc;
+    border-left: 4px solid #3b82f6;
+}
+
+.dark .experience__card {
+    background: #1e293b;
+    border-left: 4px solid #60a5fa;
+}
+
+.experience__highlights {
+    padding-left: 16px;
+    line-height: 1.4;
+    font-size: 12px;
+}
+
+@media print {
+    .experience {
+        padding: 6px !important;
+        background: white !important;
+        box-shadow: none !important;
+    }
+
+    .experience__card {
+        padding: 6px !important;
+        margin-bottom: 6px !important;
+        background: white !important;
+    }
+
+    .experience__highlights {
+        font-size: 15px !important;
+        line-height: 1.25 !important;
+        color: black !important;
+    }
+}
+
+/* Common section styling */
+section {
+    border: 1px solid #d1d5db;
+    padding: 14px;
+    border-radius: 6px;
+    background: white;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    color: #1f2937;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 6px;
+}

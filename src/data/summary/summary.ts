@@ -1,0 +1,2 @@
+export const summary =
+    "Junior Full Stack Developer with hands-on experience in MERN stack, ERP development, and workflow automation. Skilled in building scalable web applications, designing clean architectures, and optimizing frontend and backend performance. Passionate about logical problem-solving, efficient code practices, and delivering production-ready solutions."

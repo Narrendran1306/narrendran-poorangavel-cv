@@ -1,0 +1,135 @@
+.resume-page {
+    min-height: 100vh;
+    padding: 32px 80px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.resume-page.light {
+    background: linear-gradient(135deg, #dbeafe, #f8fafc);
+    color: #111827;
+}
+
+.resume-page.dark {
+    background: linear-gradient(135deg, #111827, #1f2937);
+    color: #f9fafb;
+}
+
+.resume-toolbar {
+    position: fixed;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 100;
+}
+
+.toolbar-btn {
+    width: 54px;
+    height: 54px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.toolbar-btn:hover {
+    transform: scale(1.08);
+}
+
+.dark .toolbar-btn {
+    background: #374151;
+    color: white;
+}
+
+.resume-container {
+    width: 210mm;
+    min-height: 297mm;
+    max-width: 210mm;
+    padding: 10mm;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+.light .resume-container {
+    background: white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.dark .resume-container {
+    background: #1e293b;
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.05);
+}
+
+.resume-content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+@media screen and (max-width: 1100px) {
+    .resume-page {
+        padding: 20px;
+    }
+
+    .resume-toolbar {
+        left: 10px;
+    }
+
+    .resume-container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 8mm;
+    }
+
+    .resume-toolbar {
+        display: none !important;
+    }
+
+    .resume-page {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .resume-container {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: auto !important;
+        padding: 6mm !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+
+    /* LIGHT THEME PRINT */
+    .resume-page.light .resume-container {
+        background: white !important;
+        color: black !important;
+    }
+
+    /* DARK THEME PRINT */
+    .resume-page.dark .resume-container {
+        background: #1e293b !important;
+        color: #f8fafc !important;
+    }
+
+    .resume-content {
+        gap: 6px !important;
+        margin-top: 8px !important;
+    }
+}
