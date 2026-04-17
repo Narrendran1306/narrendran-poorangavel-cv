@@ -1,19 +1,15 @@
 {
   "files": {
-    "main.css": "/narrendran-poorangavel-cv/static/css/main.57b2503c.css",
-    "main.js": "/narrendran-poorangavel-cv/static/js/main.b9b2af1e.js",
-    "static/js/584.f605a633.chunk.js": "/narrendran-poorangavel-cv/static/js/584.f605a633.chunk.js",
-    "static/media/fa-solid-900.woff2": "/narrendran-poorangavel-cv/static/media/fa-solid-900.0ae4e6254fc19607c79e.woff2",
-    "static/media/fa-brands-400.woff2": "/narrendran-poorangavel-cv/static/media/fa-brands-400.e7461d69dbbff1310a5c.woff2",
-    "static/media/fa-regular-400.woff2": "/narrendran-poorangavel-cv/static/media/fa-regular-400.1f38a564cd9eae27ebc3.woff2",
-    "static/media/fa-v4compatibility.woff2": "/narrendran-poorangavel-cv/static/media/fa-v4compatibility.661bd6b7245d5205d3e1.woff2",
-    "index.html": "/narrendran-poorangavel-cv/index.html",
-    "main.57b2503c.css.map": "/narrendran-poorangavel-cv/static/css/main.57b2503c.css.map",
-    "main.b9b2af1e.js.map": "/narrendran-poorangavel-cv/static/js/main.b9b2af1e.js.map",
-    "584.f605a633.chunk.js.map": "/narrendran-poorangavel-cv/static/js/584.f605a633.chunk.js.map"
+    "main.css": "/toothless1306.github.io/narrendran-poorangavel-cv/static/css/main.8520bed2.css",
+    "main.js": "/toothless1306.github.io/narrendran-poorangavel-cv/static/js/main.74d2c926.js",
+    "static/js/453.09d3db53.chunk.js": "/toothless1306.github.io/narrendran-poorangavel-cv/static/js/453.09d3db53.chunk.js",
+    "index.html": "/toothless1306.github.io/narrendran-poorangavel-cv/index.html",
+    "main.8520bed2.css.map": "/toothless1306.github.io/narrendran-poorangavel-cv/static/css/main.8520bed2.css.map",
+    "main.74d2c926.js.map": "/toothless1306.github.io/narrendran-poorangavel-cv/static/js/main.74d2c926.js.map",
+    "453.09d3db53.chunk.js.map": "/toothless1306.github.io/narrendran-poorangavel-cv/static/js/453.09d3db53.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57b2503c.css",
-    "static/js/main.b9b2af1e.js"
+    "static/css/main.8520bed2.css",
+    "static/js/main.74d2c926.js"
   ]
 }
