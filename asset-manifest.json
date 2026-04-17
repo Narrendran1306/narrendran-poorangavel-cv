@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/toothless1306.github.io/narrendran-poorangavel-cv/static/css/main.8520bed2.css",
-    "main.js": "/toothless1306.github.io/narrendran-poorangavel-cv/static/js/main.74d2c926.js",
-    "static/js/453.09d3db53.chunk.js": "/toothless1306.github.io/narrendran-poorangavel-cv/static/js/453.09d3db53.chunk.js",
-    "index.html": "/toothless1306.github.io/narrendran-poorangavel-cv/index.html",
-    "main.8520bed2.css.map": "/toothless1306.github.io/narrendran-poorangavel-cv/static/css/main.8520bed2.css.map",
-    "main.74d2c926.js.map": "/toothless1306.github.io/narrendran-poorangavel-cv/static/js/main.74d2c926.js.map",
-    "453.09d3db53.chunk.js.map": "/toothless1306.github.io/narrendran-poorangavel-cv/static/js/453.09d3db53.chunk.js.map"
+    "main.css": "/narrendran-poorangavel-cv/static/css/main.8520bed2.css",
+    "main.js": "/narrendran-poorangavel-cv/static/js/main.e05ee9f4.js",
+    "static/js/453.09d3db53.chunk.js": "/narrendran-poorangavel-cv/static/js/453.09d3db53.chunk.js",
+    "index.html": "/narrendran-poorangavel-cv/index.html",
+    "main.8520bed2.css.map": "/narrendran-poorangavel-cv/static/css/main.8520bed2.css.map",
+    "main.e05ee9f4.js.map": "/narrendran-poorangavel-cv/static/js/main.e05ee9f4.js.map",
+    "453.09d3db53.chunk.js.map": "/narrendran-poorangavel-cv/static/js/453.09d3db53.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8520bed2.css",
-    "static/js/main.74d2c926.js"
+    "static/js/main.e05ee9f4.js"
   ]
 }
