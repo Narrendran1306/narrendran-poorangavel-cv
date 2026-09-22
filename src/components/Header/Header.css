@@ -1,0 +1,122 @@
+.header-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-top: 3.5px solid #0284c7;
+  border-radius: 6px;
+  padding: 12px 16px 12px 16px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.header-top-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.header-name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #0f172a;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.header-badges {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.status-badge {
+  font-size: 9.2px;
+  font-weight: 700;
+  color: #0284c7;
+  background-color: #f0f9ff;
+  border: 1px solid #38bdf8;
+  border-radius: 3px;
+  padding: 2.5px 7px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  line-height: 1.3;
+}
+
+.header-role {
+  margin-top: 5px;
+  margin-bottom: 7px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0284c7;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.header-contact-row,
+.header-links-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  font-size: 10.2px;
+  color: #334155;
+  line-height: 1.35;
+}
+
+.header-contact-row {
+  margin-bottom: 5px;
+}
+
+.contact-link,
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #334155;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.contact-link:hover {
+  color: #0284c7;
+  text-decoration: underline;
+}
+
+.social-link {
+  color: #0284c7;
+}
+
+.social-link:hover {
+  color: #0369a1;
+  text-decoration: underline;
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  color: #0284c7;
+}
+
+@media print {
+  .header-card {
+    border: 1px solid #cbd5e1 !important;
+    border-top: 3.5px solid #0284c7 !important;
+    padding: 12px 16px 12px 16px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .status-badge {
+    background-color: #f0f9ff !important;
+    border-color: #38bdf8 !important;
+    color: #0284c7 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .contact-link,
+  .social-link {
+    text-decoration: none !important;
+  }
+}

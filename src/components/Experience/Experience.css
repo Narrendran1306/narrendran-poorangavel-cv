@@ -1,0 +1,121 @@
+.experience-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 11px 16px 11px 16px;
+  box-sizing: border-box;
+}
+
+.section-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 6px;
+}
+
+.section-pill {
+  display: inline-block;
+  width: 4px;
+  height: 14px;
+  background-color: #0284c7;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.experience-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.experience-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3px;
+}
+
+.experience-title-company {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.experience-role {
+  font-size: 11px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.experience-separator {
+  color: #94a3b8;
+  font-size: 10px;
+}
+
+.experience-company {
+  font-size: 11px;
+  font-weight: 600;
+  color: #0284c7;
+}
+
+.experience-meta {
+  font-size: 9.5px;
+  color: #64748b;
+  font-style: italic;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.meta-divider {
+  color: #cbd5e1;
+  font-style: normal;
+}
+
+.experience-highlights {
+  margin: 0;
+  padding-left: 15px;
+  list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5px;
+}
+
+.highlight-bullet {
+  font-size: 10px;
+  line-height: 1.45;
+  color: #334155;
+  text-align: justify;
+}
+
+.highlight-bullet strong {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+@media print {
+  .experience-card {
+    border: 1px solid #cbd5e1 !important;
+    padding: 11px 16px 11px 16px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .experience-company {
+    color: #0284c7 !important;
+  }
+}

@@ -1,0 +1,107 @@
+/* Base A4 Resume Layout */
+.resume-sheet {
+  width: 210mm;
+  height: 297mm;
+  max-height: 297mm;
+  min-height: 297mm;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 10mm 12mm 8mm 12mm;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 9px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 10.5px;
+  color: #334155;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Two Column Row for Education & Certifications */
+.resume-two-column-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  align-items: stretch;
+}
+
+.resume-col-left,
+.resume-col-right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer Section */
+.resume-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 9.5px;
+  color: #64748b;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  margin-top: auto;
+  line-height: 1.2;
+}
+
+.footer-left {
+  font-weight: 500;
+  color: #64748b;
+}
+
+.footer-right {
+  font-weight: 500;
+  color: #64748b;
+}
+
+/* Highlight formatting utility */
+.highlight-text {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Print Specific Rules */
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm !important;
+    height: 297mm !important;
+    max-height: 297mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .resume-sheet {
+    width: 210mm !important;
+    height: 297mm !important;
+    max-height: 297mm !important;
+    min-height: 297mm !important;
+    padding: 10mm 12mm 8mm 12mm !important;
+    margin: 0 !important;
+    gap: 9px !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}
