@@ -14,7 +14,7 @@ export const contactDetails: ContactInfo = {
   roleTitle: 'ZOHO DEVELOPER · FULL STACK ERP ENGINEER',
   phone: '+91 7868843874',
   email: 'narrendranpoorangavel@gmail.com',
-  location: 'Chennai / Dindigul, Tamil Nadu',
+  location: 'Dindigul, Tamil Nadu',
   linkedin: {
     label: 'linkedin.com/in/narrendranpoorangavel',
     url: 'https://linkedin.com/in/narrendranpoorangavel',
@@ -24,8 +24,8 @@ export const contactDetails: ContactInfo = {
     url: 'https://github.com/Narrendran1306',
   },
   portfolio: {
-    label: 'narrendran-poorangavel-184h.vercel.app',
-    url: 'https://narrendran-poorangavel-184h.vercel.app',
+    label: 'narrendran-poorangavel.vercel.app',
+    url: 'https://narrendran-poorangavel.vercel.app',
   },
   badges: ['IMMEDIATE JOINER', 'OPEN TO RELOCATION'],
 };
@@ -121,12 +121,14 @@ export const experienceData: ExperienceItem[] = [
 
 export const projectsData: ProjectItem[] = [
   {
-    title: 'Modular ERP & HRMS System',
+    title: 'Modular HRMS & Operations Management System',
     type: 'Personal Implementation',
-    techStack: ['React.js', 'TypeScript', 'Redux Saga', 'NestJS', 'REST APIs', 'MongoDB', 'MUI'],
+    techStack: ['React.js', 'TypeScript', 'Redux Saga', 'NestJS', 'REST APIs', 'MongoDB', 'Mongoose', 'MUI'],
     highlights: [
-      'Developed an integrated business platform covering employee onboarding, leave/attendance tracking, payroll, inventory, customer management, and role-based access control (RBAC).',
-      'Implemented clean RESTful API architectures, standardized list/detail/form views with dynamic sorting and pagination, and secure JWT authentication.',
+      'Architected a modular HRMS platform featuring granular Role-Based Access Control (RBAC), structural teams, departments, and department-integrated designations.',
+      'Built a flexible shift management module supporting custom shift creation, dynamic timing adjustments, and tailored scheduling based on organizational needs.',
+      'Engineered attendance tracking with automated overtime (OT) workflows that detect post-session punch-ins, prompt user confirmation, and route approval requests.',
+      'Implemented end-to-end leave management, task delegation, and project tracking with standardized list, detail, and form views, dynamic pagination, and secure JWT authentication.',
     ],
   },
 ];
@@ -154,7 +156,7 @@ export const certificationsData: CertificationItem[] = [
     date: 'Nov 2022',
   },
   {
-    title: 'Data Science with Python',
+    title: 'Python with Machine Learning',
     issuer: 'FITA',
     date: 'Apr 2026',
   },
@@ -170,7 +172,7 @@ export const coreCompetenciesData: string[] = [
 
 export const footerData: FooterInfo = {
   leftText: 'Narrendran Poorangavel — Zoho Developer Resume',
-  rightText: 'Available for Immediate On-site Engagement (Chennai MEPZ)',
+  rightText: 'Available for Immediate On-site Engagement',
 };
 
 export const resumeData: ResumeData = {
