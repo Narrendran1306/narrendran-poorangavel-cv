@@ -836,8 +836,6 @@ export const profilesData: Record<RoleKey, ProfileConfig> = {
       rightText: 'Available for Immediate On-site Engagement',
     },
   },
-  'technical-support': undefined,
-  'qa-engineer': undefined
 };
 
 export const defaultRoleKey: RoleKey = 'zoho-developer';

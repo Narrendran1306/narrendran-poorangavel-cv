@@ -4,8 +4,6 @@ export type RoleKey =
   | 'fullstack-developer'
   | 'frontend-developer'
   | 'erp-engineer'
-  | 'technical-support'
-  | 'qa-engineer';
 
 export interface ProfileMetadata {
   id: RoleKey;
