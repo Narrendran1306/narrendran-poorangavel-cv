@@ -112,8 +112,7 @@ export const profilesData: Record<RoleKey, ProfileConfig> = {
   'zoho-developer': {
     id: 'zoho-developer',
     targetRoleTitle: 'ZOHO DEVELOPER · AUTOMATION SPECIALIST',
-    customSummary:
-      'Proactive **Zoho & Full-Stack Developer** with hands-on expertise in **Zoho CRM customization**, **Deluge scripting**, **Zoho Creator**, and **workflow automations** alongside building enterprise-grade ERP solutions. Proven track record in automating lead qualification pipelines, implementing custom business logic, REST API integrations, and scalable database schemas. Quick learner equipped to rapidly configure, deploy, and maintain robust business solutions across the Zoho ecosystem.',
+    customSummary: 'Proactive **Zoho & Full-Stack Developer** with hands-on expertise in **Zoho CRM customization**, **Deluge scripting**, **Zoho Creator**, and **workflow automations** alongside building enterprise-grade ERP solutions. Proven track record in automating lead qualification pipelines, implementing custom business logic, REST API integrations, and scalable database schemas. Quick learner equipped to rapidly configure, deploy, and maintain robust business solutions across the Zoho ecosystem.',
     skillsPriority: [
       {
         category: 'Zoho Ecosystem',
@@ -262,8 +261,7 @@ export const profilesData: Record<RoleKey, ProfileConfig> = {
   'fullstack-developer': {
     id: 'fullstack-developer',
     targetRoleTitle: 'FULL-STACK DEVELOPER · REACT / NESTJS / MONGODB',
-    customSummary:
-      'Versatile **Full-Stack Developer** with solid hands-on experience in **React.js**, **TypeScript**, **NestJS**, and **MongoDB**. Proven track record in designing scalable RESTful APIs, architecting fine-grained **Role-Based Access Control (RBAC)**, and coordinating complex asynchronous state management with **Redux Saga**. Strong knack for designing end-to-end features—from performant database schemas to intuitive, responsive user interfaces.',
+    customSummary: 'Versatile **Full-Stack Developer** with solid hands-on experience in **React.js**, **TypeScript**, **NestJS**, and **MongoDB**. Proven track record in designing scalable RESTful APIs, architecting fine-grained **Role-Based Access Control (RBAC)**, and coordinating complex asynchronous state management with **Redux Saga**. Strong knack for designing end-to-end features—from performant database schemas to intuitive, responsive user interfaces.',
     skillsPriority: [
       {
         category: 'Backend Architecture',
@@ -412,8 +410,7 @@ export const profilesData: Record<RoleKey, ProfileConfig> = {
   'backend-developer': {
     id: 'backend-developer',
     targetRoleTitle: 'BACKEND DEVELOPER · NESTJS / NODE.JS / MONGODB',
-    customSummary:
-      'Engineered for scalability: **Full-Stack Developer** with a clear specialization and deep knack for **Backend Architecture**, **NestJS**, **Node.js**, and **MongoDB**. Proven in architecting secure **Role-Based Access Control (RBAC)**, structuring high-throughput **Mongoose schemas**, and building automated interceptor-based audit trail engines. Experienced in enforcing data integrity via validation pipelines, diffing utilities, and token-based security schemes.',
+    customSummary: 'Engineered for scalability: **Full-Stack Developer** with a clear specialization and deep knack for **Backend Architecture**, **NestJS**, **Node.js**, and **MongoDB**. Proven in architecting secure **Role-Based Access Control (RBAC)**, structuring high-throughput **Mongoose schemas**, and building automated interceptor-based audit trail engines. Experienced in enforcing data integrity via validation pipelines, diffing utilities, and token-based security schemes.',
     skillsPriority: [
       {
         category: 'Backend Core & Architecture',
@@ -556,8 +553,7 @@ export const profilesData: Record<RoleKey, ProfileConfig> = {
   'frontend-developer': {
     id: 'frontend-developer',
     targetRoleTitle: 'FRONTEND DEVELOPER · REACT / REDUX SAGA',
-    customSummary:
-      'User-centric **Full-Stack Developer** with a specialized knack for **Frontend Engineering**, **React.js**, **TypeScript**, and **Redux Saga**. Experienced in transforming intricate backend business processes and ERP data flows into performant, pixel-perfect, and accessible user interfaces. Highly adept at complex form validations, side-effect management, dynamic state sync, and building reusable UI design systems with **MUI**.',
+    customSummary: 'User-centric **Full-Stack Developer** with a specialized knack for **Frontend Engineering**, **React.js**, **TypeScript**, and **Redux Saga**. Experienced in transforming intricate backend business processes and ERP data flows into performant, pixel-perfect, and accessible user interfaces. Highly adept at complex form validations, side-effect management, dynamic state sync, and building reusable UI design systems with **MUI**.',
     skillsPriority: [
       {
         category: 'Frontend Core',
@@ -697,8 +693,7 @@ export const profilesData: Record<RoleKey, ProfileConfig> = {
   'erp-engineer': {
     id: 'erp-engineer',
     targetRoleTitle: 'ERP / ENTERPRISE SYSTEMS ENGINEER',
-    customSummary:
-      'Domain-driven **Full-Stack Developer & ERP Systems Engineer** with practical mastery over **supply chain modules**, **multi-state stock validation**, **automated audit trails**, and **business process logic**. Experienced in delivering mission-critical workflows across Sales Shipments, Services, Returns, and Transit operations. Skilled in enforcing strict data integrity, designing scalable **MongoDB schemas**, and engineering automated field-level diff utilities for enterprise transparency.',
+    customSummary: 'Domain-driven **Full-Stack Developer & ERP Systems Engineer** with practical mastery over **supply chain modules**, **multi-state stock validation**, **automated audit trails**, and **business process logic**. Experienced in delivering mission-critical workflows across Sales Shipments, Services, Returns, and Transit operations. Skilled in enforcing strict data integrity, designing scalable **MongoDB schemas**, and engineering automated field-level diff utilities for enterprise transparency.',
     skillsPriority: [
       {
         category: 'ERP Workflows & Core Logic',
@@ -841,6 +836,8 @@ export const profilesData: Record<RoleKey, ProfileConfig> = {
       rightText: 'Available for Immediate On-site Engagement',
     },
   },
+  'technical-support': undefined,
+  'qa-engineer': undefined
 };
 
 export const defaultRoleKey: RoleKey = 'zoho-developer';
