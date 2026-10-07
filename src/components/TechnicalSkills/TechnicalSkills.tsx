@@ -8,19 +8,16 @@ interface TechnicalSkillsProps {
 
 export const TechnicalSkills: React.FC<TechnicalSkillsProps> = ({ skills }) => {
   return (
-    <section className="skills-card">
-      <div className="section-title-wrapper">
-        <span className="section-pill"></span>
-        <h2 className="section-title">TECHNICAL EXPERTISE</h2>
+    <section className="ats-section ats-skills-section">
+      <div className="ats-section-header">
+        <h2 className="ats-section-title">TECHNICAL SKILLS</h2>
       </div>
 
-      <div className="skills-list">
+      <div className="ats-skills-list">
         {skills.map((item, index) => (
-          <div key={index} className="skill-row">
-            <span className="skill-category">{item.category}:</span>
-            <span className="skill-items">
-              {item.skills.join(', ')}
-            </span>
+          <div key={index} className="ats-skill-row">
+            <span className="ats-skill-category">{item.category}:</span>
+            <span className="ats-skill-items">{item.skills.join(', ')}</span>
           </div>
         ))}
       </div>

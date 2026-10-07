@@ -1,94 +1,79 @@
-.certifications-card {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  padding: 11px 16px 11px 16px;
-  box-sizing: border-box;
-  height: 100%;
+.ats-certifications-section {
   display: flex;
   flex-direction: column;
 }
 
-.section-title-wrapper {
+.ats-cert-body {
   display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-bottom: 6px;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.section-pill {
-  display: inline-block;
-  width: 4px;
-  height: 14px;
-  background-color: #0284c7;
-  border-radius: 2px;
-  flex-shrink: 0;
-}
-
-.section-title {
+.ats-cert-list {
   margin: 0;
-  font-size: 11.5px;
-  font-weight: 700;
-  color: #0f172a;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-
-.certifications-list {
-  margin: 0;
-  padding-left: 15px;
+  padding-left: 14px;
   list-style-type: disc;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 1.5px;
 }
 
-.cert-item {
-  font-size: 9.8px;
-  line-height: 1.4;
-  color: #334155;
+.ats-cert-item {
+  font-size: 9.6px;
+  line-height: 1.35;
+  color: #1e293b;
 }
 
-.cert-title {
+.ats-cert-title {
   font-weight: 700;
   color: #0f172a;
 }
 
-.cert-divider {
+.ats-cert-sep {
   margin: 0 4px;
   color: #94a3b8;
 }
 
-.cert-issuer {
+.ats-cert-issuer {
   color: #475569;
 }
 
-.cert-date {
-  font-size: 9px;
+.ats-cert-date {
+  font-size: 8.8px;
   color: #64748b;
   font-style: italic;
 }
 
-.competency-item {
-  margin-top: 2px;
+.ats-competencies-line {
+  font-size: 9.3px;
+  color: #475569;
+  margin-top: 1.5px;
+  line-height: 1.35;
 }
 
-.competency-label {
+.ats-comp-label {
   font-weight: 700;
   color: #0f172a;
-  margin-right: 4px;
 }
 
-.competency-text {
-  color: #475569;
+.ats-comp-text {
+  color: #334155;
 }
 
+/* Mobile Responsiveness */
+@media screen and (max-width: 640px) {
+  .ats-cert-item {
+    font-size: 12px;
+  }
+  .ats-competencies-line {
+    font-size: 12px;
+  }
+}
+
+/* Print Specific Rules */
 @media print {
-  .certifications-card {
-    border: 1px solid #cbd5e1 !important;
-    padding: 11px 16px 11px 16px !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
+  .ats-cert-item {
+    font-size: 9.4px !important;
+    line-height: 1.32 !important;
   }
 }

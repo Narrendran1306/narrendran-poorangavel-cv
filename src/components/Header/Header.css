@@ -1,122 +1,130 @@
-.header-card {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-top: 3.5px solid #0284c7;
-  border-radius: 6px;
-  padding: 12px 16px 12px 16px;
+/* ATS Formal Executive Header */
+.ats-header {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 5px;
+  margin-bottom: 2px;
 }
 
-.header-top-row {
+.ats-header-top {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
-  flex-wrap: nowrap;
 }
 
-.header-name {
+.ats-header-name {
   margin: 0;
   font-size: 22px;
   font-weight: 800;
-  letter-spacing: 0.8px;
+  letter-spacing: 1px;
   color: #0f172a;
   line-height: 1.1;
   text-transform: uppercase;
 }
 
-.header-badges {
+.ats-header-badges {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   align-items: center;
 }
 
-.status-badge {
-  font-size: 9.2px;
+.ats-badge {
+  font-size: 8.8px;
   font-weight: 700;
   color: #0284c7;
   background-color: #f0f9ff;
-  border: 1px solid #38bdf8;
+  border: 1px solid #bae6fd;
   border-radius: 3px;
-  padding: 2.5px 7px;
+  padding: 1.5px 6px;
   letter-spacing: 0.5px;
   white-space: nowrap;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
-.header-role {
-  margin-top: 5px;
-  margin-bottom: 7px;
-  font-size: 13px;
+.ats-header-role {
+  margin-top: 3px;
+  margin-bottom: 4px;
+  font-size: 12.2px;
   font-weight: 700;
   color: #0284c7;
-  letter-spacing: 0.7px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   line-height: 1.2;
 }
 
-.header-contact-row,
-.header-links-row {
+.ats-contact-line {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 18px;
-  font-size: 10.2px;
+  gap: 6px 8px;
+  font-size: 9.8px;
   color: #334155;
   line-height: 1.35;
 }
 
-.header-contact-row {
-  margin-bottom: 5px;
+.links-line {
+  margin-top: 2px;
 }
 
-.contact-link,
-.contact-item {
+.ats-contact-item {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   color: #334155;
   text-decoration: none;
-  transition: color 0.15s ease;
 }
 
-.contact-link:hover {
+.ats-contact-item:hover {
   color: #0284c7;
   text-decoration: underline;
 }
 
-.social-link {
-  color: #0284c7;
+.ats-separator {
+  color: #94a3b8;
+  font-size: 8px;
+  user-select: none;
 }
 
-.social-link:hover {
-  color: #0369a1;
-  text-decoration: underline;
-}
-
-.contact-icon {
+.ats-icon {
   flex-shrink: 0;
   color: #0284c7;
 }
 
+/* Mobile Responsiveness */
+@media screen and (max-width: 640px) {
+  .ats-header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .ats-header-name {
+    font-size: 20px;
+  }
+  .ats-contact-line {
+    font-size: 11.5px;
+    gap: 6px 10px;
+  }
+}
+
+/* Print Specific Rules */
 @media print {
-  .header-card {
-    border: 1px solid #cbd5e1 !important;
-    border-top: 3.5px solid #0284c7 !important;
-    padding: 12px 16px 12px 16px !important;
+  .ats-header {
+    border-bottom: 2px solid #0f172a !important;
+    padding-bottom: 4px !important;
+    margin-bottom: 2px !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
-  .status-badge {
+  .ats-badge {
     background-color: #f0f9ff !important;
-    border-color: #38bdf8 !important;
+    border: 1px solid #bae6fd !important;
     color: #0284c7 !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
-  .contact-link,
-  .social-link {
+  .ats-contact-item {
     text-decoration: none !important;
   }
 }

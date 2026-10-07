@@ -1,3 +1,39 @@
+export type RoleKey =
+  | 'zoho-developer'
+  | 'backend-developer'
+  | 'fullstack-developer'
+  | 'frontend-developer'
+  | 'erp-engineer'
+  | 'technical-support';
+
+export interface ProfileMetadata {
+  id: RoleKey;
+  label: string;
+  shortLabel: string;
+  badge: string;
+  tagline: string;
+  accentColor?: string;
+}
+
+export interface ProfileConfig {
+  id: RoleKey;
+  targetRoleTitle: string;
+  customSummary: string;
+  skillsPriority: SkillCategory[];
+  experienceBullets: ExperienceItem[];
+  featuredProjects: ProjectItem[];
+  coreCompetencies?: string[];
+  footer?: FooterInfo;
+}
+
+export interface CentralizedResumeData {
+  contact: ContactInfo;
+  education: EducationItem[];
+  certifications: CertificationItem[];
+  defaultRole: RoleKey;
+  profiles: Record<RoleKey, ProfileConfig>;
+}
+
 export interface ContactLink {
   label: string;
   url: string;
@@ -67,3 +103,4 @@ export interface ResumeData {
   coreCompetencies: string[];
   footer: FooterInfo;
 }
+

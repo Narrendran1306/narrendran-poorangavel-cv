@@ -1,110 +1,100 @@
-.education-card {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  padding: 11px 16px 11px 16px;
-  box-sizing: border-box;
-  height: 100%;
+.ats-education-section {
   display: flex;
   flex-direction: column;
 }
 
-.section-title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-bottom: 6px;
-}
-
-.section-pill {
-  display: inline-block;
-  width: 4px;
-  height: 14px;
-  background-color: #0284c7;
-  border-radius: 2px;
-  flex-shrink: 0;
-}
-
-.section-title {
-  margin: 0;
-  font-size: 11.5px;
-  font-weight: 700;
-  color: #0f172a;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-
-.education-list {
+.ats-education-list {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
 }
 
-.education-item {
+.ats-education-item {
   display: flex;
   flex-direction: column;
-  gap: 2.5px;
 }
 
-.education-degree {
-  font-size: 10.8px;
-  font-weight: 700;
-  color: #0f172a;
-  line-height: 1.25;
-}
-
-.education-institution-period {
-  font-size: 9.8px;
-  color: #475569;
+.ats-edu-header {
   display: flex;
-  align-items: center;
-  gap: 5px;
-  line-height: 1.35;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.education-score-location {
-  font-size: 9.8px;
-  color: #64748b;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  line-height: 1.35;
-}
-
-.education-coursework {
-  font-size: 9.5px;
-  color: #64748b;
+.ats-edu-degree-inst {
   display: flex;
   align-items: baseline;
   gap: 4px;
-  line-height: 1.35;
-  margin-top: 1px;
 }
 
-.coursework-label {
+.ats-degree {
+  font-size: 10.3px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.ats-institution {
+  font-size: 10.3px;
   font-weight: 600;
   color: #334155;
 }
 
-.coursework-text {
+.ats-edu-meta {
+  font-size: 9.2px;
+  color: #475569;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.ats-score {
+  font-weight: 600;
+  color: #0284c7;
+}
+
+.ats-coursework {
+  font-size: 9.2px;
   color: #64748b;
+  margin-top: 1px;
+  line-height: 1.35;
 }
 
-.edu-score {
+.ats-coursework-label {
   font-weight: 600;
   color: #334155;
 }
 
-.edu-divider {
-  color: #cbd5e1;
+.ats-coursework-text {
+  color: #475569;
 }
 
+/* Mobile Responsiveness */
+@media screen and (max-width: 640px) {
+  .ats-edu-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+  .ats-edu-degree-inst {
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+  .ats-edu-meta {
+    font-size: 11px;
+  }
+  .ats-coursework {
+    font-size: 11.5px;
+  }
+}
+
+/* Print Specific Rules */
 @media print {
-  .education-card {
-    border: 1px solid #cbd5e1 !important;
-    padding: 11px 16px 11px 16px !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
+  .ats-edu-header {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: baseline !important;
+  }
+  .ats-score {
+    color: #0284c7 !important;
   }
 }

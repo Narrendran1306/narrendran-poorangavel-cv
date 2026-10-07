@@ -8,12 +8,11 @@ interface SummaryProps {
 
 export const Summary: React.FC<SummaryProps> = ({ summary }) => {
   return (
-    <section className="summary-card">
-      <div className="section-title-wrapper">
-        <span className="section-pill"></span>
-        <h2 className="section-title">PROFESSIONAL SUMMARY</h2>
+    <section className="ats-section ats-summary-section">
+      <div className="ats-section-header">
+        <h2 className="ats-section-title">PROFESSIONAL SUMMARY</h2>
       </div>
-      <p className="summary-text">{formatRichText(summary)}</p>
+      <p className="ats-summary-text">{formatRichText(summary)}</p>
     </section>
   );
 };

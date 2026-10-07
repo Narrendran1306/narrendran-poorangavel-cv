@@ -1,73 +1,65 @@
-.skills-card {
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  padding: 11px 16px 11px 16px;
-  box-sizing: border-box;
-}
-
-.section-title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-bottom: 6px;
-}
-
-.section-pill {
-  display: inline-block;
-  width: 4px;
-  height: 14px;
-  background-color: #0284c7;
-  border-radius: 2px;
-  flex-shrink: 0;
-}
-
-.section-title {
-  margin: 0;
-  font-size: 11.5px;
-  font-weight: 700;
-  color: #0f172a;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-
-.skills-list {
+.ats-skills-section {
   display: flex;
   flex-direction: column;
-  gap: 4px;
 }
 
-.skill-row {
+.ats-skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ats-skill-row {
   display: flex;
   align-items: baseline;
-  font-size: 10.2px;
-  line-height: 1.48;
+  font-size: 9.9px;
+  line-height: 1.4;
 }
 
-.skill-category {
+.ats-skill-category {
   font-weight: 700;
   color: #0f172a;
-  width: 145px;
-  min-width: 145px;
+  width: 140px;
+  min-width: 140px;
   flex-shrink: 0;
 }
 
-.skill-items {
+.ats-skill-items {
   color: #334155;
   flex: 1;
 }
 
-.skill-row:first-child .skill-items {
-  font-weight: 600;
-  color: #0f172a;
+/* Mobile Responsiveness */
+@media screen and (max-width: 640px) {
+  .ats-skill-row {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12.5px;
+    gap: 1px;
+    margin-bottom: 4px;
+  }
+
+  .ats-skill-category {
+    width: 100%;
+    min-width: 0;
+    color: #0284c7;
+    font-size: 12px;
+  }
 }
 
+/* Print Specific Rules */
 @media print {
-  .skills-card {
-    border: 1px solid #cbd5e1 !important;
-    padding: 11px 16px 11px 16px !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
+  .ats-skill-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: baseline !important;
+    font-size: 9.7px !important;
+    line-height: 1.38 !important;
+  }
+
+  .ats-skill-category {
+    width: 135px !important;
+    min-width: 135px !important;
+    color: #0f172a !important;
   }
 }

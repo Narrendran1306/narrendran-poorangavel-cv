@@ -12,30 +12,34 @@ export const Certifications: React.FC<CertificationsProps> = ({
   coreCompetencies = [],
 }) => {
   return (
-    <section className="certifications-card">
-      <div className="section-title-wrapper">
-        <span className="section-pill"></span>
-        <h2 className="section-title">CERTIFICATIONS & COMPETENCIES</h2>
+    <section className="ats-section ats-certifications-section">
+      <div className="ats-section-header">
+        <h2 className="ats-section-title">CERTIFICATIONS & COMPETENCIES</h2>
       </div>
 
-      <ul className="certifications-list">
-        {certifications.map((item, idx) => (
-          <li key={idx} className="cert-item">
-            <span className="cert-title">{item.title}</span>
-            <span className="cert-divider">–</span>
-            <span className="cert-issuer">{item.issuer}</span>
-            {item.date && <span className="cert-date"> ({item.date})</span>}
-          </li>
-        ))}
+      <div className="ats-cert-body">
+        <ul className="ats-cert-list">
+          {certifications.map((item, idx) => (
+            <li key={idx} className="ats-cert-item">
+              <span className="ats-cert-title">{item.title}</span>
+              <span className="ats-cert-sep">–</span>
+              <span className="ats-cert-issuer">{item.issuer}</span>
+              {item.date && (
+                <span className="ats-cert-date"> ({item.date})</span>
+              )}
+            </li>
+          ))}
+        </ul>
+
         {coreCompetencies.length > 0 && (
-          <li className="cert-item competency-item">
-            <span className="competency-label">Core:</span>
-            <span className="competency-text">
-              {coreCompetencies.join(', ')}
+          <div className="ats-competencies-line">
+            <span className="ats-comp-label">Core Competencies:</span>{' '}
+            <span className="ats-comp-text">
+              {coreCompetencies.join(' · ')}
             </span>
-          </li>
+          </div>
         )}
-      </ul>
+      </div>
     </section>
   );
 };
