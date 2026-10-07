@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Bot, Server, Layers, Layout, ShieldCheck, LifeBuoy, Check } from 'lucide-react';
+import { Bot, Server, Layers, Layout, ShieldCheck, LifeBuoy, CheckCheck, Check } from 'lucide-react';
 import type { RoleKey, ProfileMetadata } from '../../types/portfolio.types';
 import './RoleSwitcher.css';
 
@@ -24,6 +24,8 @@ const getRoleIcon = (roleId: RoleKey) => {
       return <ShieldCheck size={14} className="role-icon" />;
     case 'technical-support':
       return <LifeBuoy size={14} className="role-icon" />;
+    case 'qa-engineer':
+      return <CheckCheck size={14} className="role-icon" />;
     default:
       return null;
   }

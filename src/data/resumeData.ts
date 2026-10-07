@@ -113,6 +113,14 @@ export const roleMetadataList: ProfileMetadata[] = [
     tagline: 'Incident Troubleshooting, CRM/ERP Diagnostics, RCA & API Debugging',
     accentColor: '#ec4899',
   },
+  {
+    id: 'qa-engineer',
+    label: 'QA / SDET & Software Testing',
+    shortLabel: 'QA / SDET',
+    badge: 'API & Automation',
+    tagline: 'API Testing (Postman), DB State Verification, STLC, Test Automation & Defect Lifecycle',
+    accentColor: '#0ea5e9',
+  },
 ];
 
 export const profilesData: Record<RoleKey, ProfileConfig> = {
@@ -921,6 +929,152 @@ export const profilesData: Record<RoleKey, ProfileConfig> = {
       rightText: 'Available for Immediate On-site Engagement',
     },
   },
+
+  // 7. QA / SDET & SOFTWARE TESTING
+  'qa-engineer': {
+    id: 'qa-engineer',
+    targetRoleTitle: 'JUNIOR QA ENGINEER · SDET & SOFTWARE TESTING',
+    contactOverride: {
+      location: 'Chennai / Dindigul, Tamil Nadu',
+    },
+    customSummary:
+      'Technical, detail-oriented **Software Quality Assurance Engineer** with 1.3+ years of experience across web and enterprise application domains. Leverages a code-level engineering background in **TypeScript, JavaScript, React, and NestJS** to bridge the gap between functional QA and automation. Proven expertise in **RESTful API testing with Postman**, backend **database state verification** using **MySQL and MongoDB**, end-to-end **business logic validation** across complex ERP modules, and mobile/web cross-platform verification. Highly proficient in **STLC**, **defect lifecycles**, and rapid test automation ramp-up using TypeScript test frameworks (**Cucumber/BDD, Playwright, Cypress**).',
+    skillsPriority: [
+      {
+        category: 'Testing Disciplines',
+        skills: [
+          'Functional Testing',
+          'API & Integration Testing',
+          'Regression Testing',
+          'Smoke/Sanity Testing',
+          'Cross-Browser & Mobile UI Validation',
+          'Defect Life Cycle',
+          'Test Case Design & Execution',
+          'STLC & RTM',
+        ],
+      },
+      {
+        category: 'Languages & Frameworks',
+        skills: [
+          'TypeScript',
+          'JavaScript (ES6+)',
+          'React.js',
+          'React Native',
+          'NestJS',
+          'Node.js',
+        ],
+      },
+      {
+        category: 'Test Automation & Tools',
+        skills: [
+          'Postman (REST API Assertions & Collections)',
+          'Cucumber BDD with TypeScript',
+          'Playwright / Cypress (Exposure)',
+          'Chrome DevTools',
+          'Git / GitHub',
+        ],
+      },
+      {
+        category: 'Databases & Querying',
+        skills: [
+          'MySQL / PL-SQL',
+          'MongoDB & Mongoose ODM',
+          'Backend Data Persistence Verification',
+          'State Transitions & Payload Schema Validation',
+        ],
+      },
+      {
+        category: 'Core Principles',
+        skills: [
+          'Edge-Case Detection',
+          'Boundary Value Analysis',
+          'Equivalence Partitioning',
+          'Agile/Scrum',
+          'Defect Triage',
+        ],
+      },
+      {
+        category: 'Languages',
+        skills: [
+          'Tamil (Native)',
+          'English (Professional Working)',
+          'Hindi (Conversational)',
+        ],
+      },
+    ],
+    experienceBullets: [
+      {
+        role: 'Junior Developer / Software Engineer (QA & Product Validation)',
+        company: 'GWAYERP Tech Solutions',
+        period: 'Dec 2024 — Oct 2025',
+        location: 'Chennai, India',
+        highlights: [
+          'Formulated and executed **150+ comprehensive manual and API test scenarios** for high-stakes enterprise ERP modules, including **Sales Shipment**, **Inventory Management**, and **Audit Trail**.',
+          'Conducted deep-dive **REST API testing using Postman**—validating HTTP status codes, headers, token-based authentication flows, JSON payloads, and error-handling edge cases.',
+          'Executed strict database-level validation using **MySQL and MongoDB** to verify backend data persistence, inventory decrement math, and state integrity across order fulfillment stages.',
+          'Validated complex business logic, such as **preventing duplicate dispatches** and detecting race conditions in simultaneous inventory updates.',
+          'Championed **defect tracking and triage**, reporting reproducible issues with structured logs, network payloads, and severity/priority tags to decrease regression cycle time.',
+          'Conducted **cross-browser compatibility and responsive UI testing** across modern desktop engines and mobile viewport profiles.',
+        ],
+      },
+      {
+        role: 'Zoho Developer & Automation Intern',
+        company: 'Elite Tech Park',
+        period: 'Mar 2024 — Jul 2024',
+        location: 'Coimbatore, India',
+        highlights: [
+          'Validated business process workflows, data integrity constraints, and automated **Deluge scripts** across **Zoho CRM** and **Zoho Creator**.',
+          'Designed edge-case test data sets to verify **form validation rules**, **approval escalation matrixes**, and **webhook integrations**.',
+          'Identified and resolved logic gaps in **lead routing and record assignment automations** prior to production deployment.',
+        ],
+      },
+    ],
+    featuredProjects: [
+      {
+        title: 'enthran — HRMS & CRM Platform (Full-Stack & Integration Testing)',
+        type: 'Enterprise Platform QA & Validation',
+        techStack: [
+          'React.js',
+          'NestJS',
+          'MongoDB',
+          'Postman',
+          'TypeScript',
+          'REST APIs',
+        ],
+        highlights: [
+          'Architected and tested an enterprise web platform built on **React, NestJS, and MongoDB**.',
+          'Created end-to-end integration and API test suites in **Postman** for **RBAC (Role-Based Access Control)**, JWT session lifecycles, and tenant permission boundaries.',
+          'Performed rigorous schema and payload structure validation to eliminate backend serialization errors.',
+        ],
+      },
+      {
+        title: 'Workforce Hub — Leave Management Automation',
+        type: 'Workflow & State Validation',
+        techStack: [
+          'React.js',
+          'Node.js',
+          'TypeScript',
+          'MongoDB',
+          'Postman',
+        ],
+        highlights: [
+          'Built and tested multi-stage approval workflows, testing conditional logic, **leave-balance state transitions**, and edge scenarios (e.g., duplicate date collisions, insufficient balances).',
+        ],
+      },
+    ],
+    coreCompetencies: [
+      'Edge-Case Detection',
+      'Boundary Value Analysis',
+      'Equivalence Partitioning',
+      'REST API Testing (Postman)',
+      'STLC & RTM',
+      'Database State Verification',
+    ],
+    footer: {
+      leftText: 'Narrendran Poorangavel — Junior QA / SDET Resume',
+      rightText: 'Immediate Joiner • Open to Relocation',
+    },
+  },
 };
 
 export const defaultRoleKey: RoleKey = 'zoho-developer';
@@ -935,6 +1089,7 @@ export const getResumeForRole = (roleKey: RoleKey = defaultRoleKey): ResumeData 
     contact: {
       ...baseContactDetails,
       roleTitle: profile.targetRoleTitle,
+      ...(profile.contactOverride || {}),
     },
     summary: profile.customSummary,
     skills: profile.skillsPriority,

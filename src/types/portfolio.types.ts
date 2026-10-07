@@ -4,7 +4,8 @@ export type RoleKey =
   | 'fullstack-developer'
   | 'frontend-developer'
   | 'erp-engineer'
-  | 'technical-support';
+  | 'technical-support'
+  | 'qa-engineer';
 
 export interface ProfileMetadata {
   id: RoleKey;
@@ -24,6 +25,7 @@ export interface ProfileConfig {
   featuredProjects: ProjectItem[];
   coreCompetencies?: string[];
   footer?: FooterInfo;
+  contactOverride?: Partial<ContactInfo>;
 }
 
 export interface CentralizedResumeData {
